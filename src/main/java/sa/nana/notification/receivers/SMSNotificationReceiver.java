@@ -28,6 +28,7 @@ public class SMSNotificationReceiver {
         try {
             log.debug("[SMS MESSAGE] Received: {}", payload);
         } catch (Exception e) {
+            log.error(e.getMessage(), e);
             jms.convertAndSend(QUEUE_SMS_FAILED, new FailureNotificationPayload(e.getMessage(), payload));
         }
     }

@@ -28,6 +28,7 @@ public class MobilePushNotificationReceiver {
         try {
             log.debug("[MOBILE PUSH MESSAGE] Received: {}", payload);
         } catch (Exception e) {
+            log.error(e.getMessage(), e);
             jms.convertAndSend(QUEUE_MOBILE_FAILED, new FailureNotificationPayload(e.getMessage(), payload));
         }
     }

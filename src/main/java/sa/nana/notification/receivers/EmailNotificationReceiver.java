@@ -28,6 +28,7 @@ public class EmailNotificationReceiver {
         try {
             log.debug("[EMAIL MESSAGE] Received: {}", payload);
         } catch (Exception e) {
+            log.error(e.getMessage(), e);
             jms.convertAndSend(QUEUE_EMAIL_FAILED, new FailureNotificationPayload(e.getMessage(), payload));
         }
     }
