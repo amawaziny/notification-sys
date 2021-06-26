@@ -15,11 +15,11 @@ to send notification or send them via [Apache ActiveMQ](https://activemq.apache.
 
 First, Mack sure you already installed Apache Maven, Docker and docker-compose on your environment, then run:
 
-`mvn clean install -Dactivemq=<activemq host> && docker-compose up`
+`./mvn clean install -Dactivemq=<activemq host> && docker-compose up`
 
-If you don't have ActiveMQ server installed you can skip test
+If you don't have any ActiveMQ server installed you can skip test with:
 
-`mvn clean install -DskipTests && docker-compose up`
+`./mvn clean install -DskipTests && docker-compose up`
 
 To see the full documentation of the API go to [Swagger](http://localhost:8080/notifications/swagger-ui/index.html)
 also, you can try the API from swagger directly
