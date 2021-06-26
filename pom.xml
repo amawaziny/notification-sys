@@ -20,6 +20,7 @@
 		<swagger.version>3.0.0</swagger.version>
 		<libphonenumber.version>8.12.25</libphonenumber.version>
 		<activemq>localhost</activemq>
+		<spring-boot.build-image.imageName>${project.artifactId}:${project.version}</spring-boot.build-image.imageName>
 	</properties>
 
 	<dependencies>
