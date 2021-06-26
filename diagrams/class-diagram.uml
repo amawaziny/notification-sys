@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>sa.nana.notification.configurations.ActiveMQConfig</OriginalElement>
+  <nodes>
+    <node x="45.25" y="1053.5">sa.nana.notification.receivers.EmailNotificationReceiver</node>
+    <node x="2184.569345238095" y="0.0">sa.nana.notification.models.PhoneNumber</node>
+    <node x="266.0" y="323.0">sa.nana.notification.models.MobilePushModel</node>
+    <node x="2333.819345238095" y="696.0">sa.nana.notification.validations.Phone</node>
+    <node x="0.0" y="297.0">sa.nana.notification.models.EmailModel</node>
+    <node x="1491.6318452380951" y="656.0">sa.nana.notification.resources.advice.entity.ResponseMessage</node>
+    <node x="2266.319345238095" y="402.0">sa.nana.notification.validations.PhoneNumberValidator</node>
+    <node x="1654.0" y="1053.5">sa.nana.notification.receivers.SMSNotificationReceiver</node>
+    <node x="2370.0" y="1067.0">sa.nana.notification.resources.advice.boundary.ErrorAdvice</node>
+    <node x="1143.0" y="1027.0">sa.nana.notification.resources.mobile.boundary.NotificationMobilePushResource</node>
+    <node x="2042.1943452380951" y="336.0">sa.nana.notification.models.SMSModel</node>
+    <node x="364.0" y="1053.5">sa.nana.notification.receivers.MobilePushNotificationReceiver</node>
+    <node x="55.25" y="669.0">sa.nana.notification.resources.email.entity.EmailPayload</node>
+    <node x="381.5" y="669.0">sa.nana.notification.resources.mobile.entity.MobilePushPayload</node>
+    <node x="797.328125" y="695.5">sa.nana.notification.configurations.Constants</node>
+    <node x="1986.9443452380951" y="669.0">sa.nana.notification.resources.sms.entity.SMSPayload</node>
+    <node x="273.0" y="39.5">sa.nana.notification.models.OsType</node>
+    <node x="1919.0" y="1027.0">sa.nana.notification.resources.sms.boundary.NotificationSmsResource</node>
+    <node x="685.0" y="1027.0">sa.nana.notification.resources.email.boundary.NotificationEmailResource</node>
+    <node x="537.5068452380951" y="349.0">sa.nana.notification.models.Payload</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="sa.nana.notification.resources.email.boundary.NotificationEmailResource" target="sa.nana.notification.configurations.Constants">
+      <point x="-54.75" y="-71.5" />
+      <point x="849.25" y="1007.0" />
+      <point x="882.328125" y="1007.0" />
+      <point x="-17.0" y="71.0" />
+    </edge>
+    <edge source="sa.nana.notification.resources.mobile.boundary.NotificationMobilePushResource" target="sa.nana.notification.resources.advice.entity.ResponseMessage">
+      <point x="184.125" y="-71.5" />
+      <point x="1572.625" y="1007.0" />
+      <point x="1603.1318452380951" y="1007.0" />
+      <point x="0.0" y="110.5" />
+    </edge>
+    <edge source="sa.nana.notification.models.MobilePushModel" target="sa.nana.notification.models.OsType">
+      <point x="0.0" y="-123.5" />
+      <point x="0.0" y="84.0" />
+    </edge>
+    <edge source="sa.nana.notification.models.SMSModel" target="sa.nana.notification.models.PhoneNumber">
+      <point x="0.0" y="-110.5" />
+      <point x="2152.694345238095" y="272.0" />
+      <point x="2246.069345238095" y="272.0" />
+      <point x="-61.5" y="123.5" />
+    </edge>
+    <edge source="sa.nana.notification.resources.mobile.boundary.NotificationMobilePushResource" target="sa.nana.notification.configurations.Constants">
+      <point x="-61.375" y="-71.5" />
+      <point x="1327.125" y="957.0" />
+      <point x="916.328125" y="957.0" />
+      <point x="17.0" y="71.0" />
+    </edge>
+    <edge source="sa.nana.notification.resources.sms.entity.SMSPayload" target="sa.nana.notification.models.Payload">
+      <point x="-55.25" y="-97.5" />
+      <point x="2042.1943452380951" y="636.0" />
+      <point x="721.6735119047617" y="636.0" />
+      <point x="73.66666666666652" y="97.5" />
+    </edge>
+    <edge source="sa.nana.notification.resources.mobile.entity.MobilePushPayload" target="sa.nana.notification.models.MobilePushModel">
+      <point x="-57.75" y="-97.5" />
+      <point x="439.25" y="616.0" />
+      <point x="376.5" y="616.0" />
+      <point x="0.0" y="123.5" />
+    </edge>
+    <edge source="sa.nana.notification.resources.email.entity.EmailPayload" target="sa.nana.notification.models.EmailModel">
+      <point x="-55.25" y="-97.5" />
+      <point x="0.0" y="149.5" />
+    </edge>
+    <edge source="sa.nana.notification.validations.PhoneNumberValidator" target="sa.nana.notification.models.PhoneNumber">
+      <point x="0.0" y="-44.5" />
+      <point x="2479.319345238095" y="272.0" />
+      <point x="2369.069345238095" y="272.0" />
+      <point x="61.5" y="123.5" />
+    </edge>
+    <edge source="sa.nana.notification.resources.sms.boundary.NotificationSmsResource" target="sa.nana.notification.configurations.Constants">
+      <point x="-161.625" y="-71.5" />
+      <point x="1972.875" y="937.0" />
+      <point x="984.328125" y="937.0" />
+      <point x="85.0" y="71.0" />
+    </edge>
+    <edge source="sa.nana.notification.resources.email.boundary.NotificationEmailResource" target="sa.nana.notification.resources.email.entity.EmailPayload">
+      <point x="-164.25" y="-71.5" />
+      <point x="739.75" y="977.0" />
+      <point x="221.0" y="977.0" />
+      <point x="55.25" y="97.5" />
+    </edge>
+    <edge source="sa.nana.notification.resources.advice.boundary.ErrorAdvice" target="sa.nana.notification.resources.advice.entity.ResponseMessage">
+      <point x="0.0" y="-31.5" />
+      <point x="2670.0" y="897.0" />
+      <point x="1698.7032738095236" y="897.0" />
+      <point x="95.57142857142844" y="110.5" />
+    </edge>
+    <edge source="sa.nana.notification.receivers.SMSNotificationReceiver" target="sa.nana.notification.configurations.Constants">
+      <point x="-61.25" y="-45.0" />
+      <point x="1715.25" y="947.0" />
+      <point x="950.328125" y="947.0" />
+      <point x="51.0" y="71.0" />
+    </edge>
+    <edge source="sa.nana.notification.validations.Phone" target="sa.nana.notification.validations.PhoneNumberValidator">
+      <point x="-72.75" y="-70.5" />
+      <point x="2406.569345238095" y="636.0" />
+      <point x="2372.819345238095" y="636.0" />
+      <point x="-106.5" y="44.5" />
+    </edge>
+    <edge source="sa.nana.notification.validations.PhoneNumberValidator" target="sa.nana.notification.validations.Phone">
+      <point x="106.5" y="44.5" />
+      <point x="2585.819345238095" y="636.0" />
+      <point x="2552.069345238095" y="636.0" />
+      <point x="72.75" y="-70.5" />
+    </edge>
+    <edge source="sa.nana.notification.receivers.MobilePushNotificationReceiver" target="sa.nana.notification.resources.mobile.entity.MobilePushPayload">
+      <point x="-75.25" y="-45.0" />
+      <point x="-57.75" y="97.5" />
+    </edge>
+    <edge source="sa.nana.notification.resources.mobile.entity.MobilePushPayload" target="sa.nana.notification.models.Payload">
+      <point x="57.75" y="-97.5" />
+      <point x="554.75" y="636.0" />
+      <point x="648.0068452380951" y="636.0" />
+      <point x="0.0" y="97.5" />
+    </edge>
+    <edge source="sa.nana.notification.receivers.EmailNotificationReceiver" target="sa.nana.notification.resources.email.entity.EmailPayload">
+      <point x="-65.25" y="-45.0" />
+      <point x="-55.25" y="97.5" />
+    </edge>
+    <edge source="sa.nana.notification.resources.sms.boundary.NotificationSmsResource" target="sa.nana.notification.resources.sms.entity.SMSPayload">
+      <point x="161.625" y="-71.5" />
+      <point x="2296.125" y="907.0" />
+      <point x="2152.694345238095" y="907.0" />
+      <point x="55.25" y="97.5" />
+    </edge>
+    <edge source="sa.nana.notification.resources.sms.entity.SMSPayload" target="sa.nana.notification.models.SMSModel">
+      <point x="55.25" y="-97.5" />
+      <point x="0.0" y="110.5" />
+    </edge>
+    <edge source="sa.nana.notification.resources.mobile.boundary.NotificationMobilePushResource" target="sa.nana.notification.resources.mobile.entity.MobilePushPayload">
+      <point x="-184.125" y="-71.5" />
+      <point x="1204.375" y="967.0" />
+      <point x="554.75" y="967.0" />
+      <point x="57.75" y="97.5" />
+    </edge>
+    <edge source="sa.nana.notification.resources.email.entity.EmailPayload" target="sa.nana.notification.models.Payload">
+      <point x="55.25" y="-97.5" />
+      <point x="221.0" y="626.0" />
+      <point x="574.3401785714286" y="626.0" />
+      <point x="-73.66666666666652" y="97.5" />
+    </edge>
+    <edge source="sa.nana.notification.resources.sms.boundary.NotificationSmsResource" target="sa.nana.notification.resources.advice.entity.ResponseMessage">
+      <point x="53.875" y="-71.5" />
+      <point x="2188.375" y="917.0" />
+      <point x="1666.846130952381" y="917.0" />
+      <point x="63.71428571428578" y="110.5" />
+    </edge>
+    <edge source="sa.nana.notification.receivers.MobilePushNotificationReceiver" target="sa.nana.notification.configurations.Constants">
+      <point x="75.25" y="-45.0" />
+      <point x="589.75" y="997.0" />
+      <point x="848.328125" y="997.0" />
+      <point x="-51.0" y="71.0" />
+    </edge>
+    <edge source="sa.nana.notification.receivers.SMSNotificationReceiver" target="sa.nana.notification.resources.sms.entity.SMSPayload">
+      <point x="61.25" y="-45.0" />
+      <point x="1837.75" y="1007.0" />
+      <point x="2042.1943452380951" y="1007.0" />
+      <point x="-55.25" y="97.5" />
+    </edge>
+    <edge source="sa.nana.notification.receivers.EmailNotificationReceiver" target="sa.nana.notification.configurations.Constants">
+      <point x="65.25" y="-45.0" />
+      <point x="241.0" y="987.0" />
+      <point x="814.328125" y="987.0" />
+      <point x="-85.0" y="71.0" />
+    </edge>
+    <edge source="sa.nana.notification.resources.email.boundary.NotificationEmailResource" target="sa.nana.notification.resources.advice.entity.ResponseMessage">
+      <point x="164.25" y="-71.5" />
+      <point x="1068.25" y="987.0" />
+      <point x="1539.4175595238094" y="987.0" />
+      <point x="-63.71428571428578" y="110.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="882.7777777777777" y="755.0" />
+  <SelectedNodes>
+    <node>sa.nana.notification.models.PhoneNumber</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

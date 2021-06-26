@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>SpringLocalModels</ID>
+  <OriginalElement>module=notification-sys</OriginalElement>
+  <nodes>
+    <node x="0.0" y="32.0">module=notification-sys</node>
+    <node x="221.5" y="0.0">fileset=notification-sys/NotificationApplication</node>
+    <node x="488.0" y="32.0">sa.nana.notification.NotificationApplication</node>
+    <node x="737.0" y="32.0">sa.nana.notification.configurations.ActiveMQConfig</node>
+    <node x="204.0" y="64.0">fileset=notification-sys/NotificationApplication MVC</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="module=notification-sys" target="fileset=notification-sys/NotificationApplication">
+      <point x="62.0" y="-6.0" />
+      <point x="204.0" y="12.0" />
+      <point x="-84.5" y="-0.0" />
+    </edge>
+    <edge source="sa.nana.notification.NotificationApplication" target="sa.nana.notification.configurations.ActiveMQConfig">
+      <point x="84.5" y="-0.0" />
+      <point x="-66.0" y="-0.0" />
+    </edge>
+    <edge source="fileset=notification-sys/NotificationApplication" target="sa.nana.notification.NotificationApplication">
+      <point x="84.5" y="-0.0" />
+      <point x="408.0" y="12.0" />
+      <point x="-84.5" y="-6.0" />
+    </edge>
+    <edge source="fileset=notification-sys/NotificationApplication MVC" target="sa.nana.notification.NotificationApplication">
+      <point x="102.0" y="-0.0" />
+      <point x="-84.5" y="6.0" />
+    </edge>
+    <edge source="module=notification-sys" target="fileset=notification-sys/NotificationApplication MVC">
+      <point x="62.0" y="6.0" />
+      <point x="-102.0" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="434.5" y="44.0" />
+  <SelectedNodes>
+    <node>module=notification-sys</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Show filesets as groups</Category>
+  </Categories>
+</Diagram>
+
