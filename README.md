@@ -13,7 +13,7 @@ to send notifications or send them via [Apache ActiveMQ](https://activemq.apache
 
 # Getting Started
 
-First, Mack sure you already installed Apache Maven, Docker, and docker-compose on your environment, then run:
+First, Make sure you already installed Apache Maven, Docker, and docker-compose on your environment, then run:
 
 `./mvn clean install -Dactivemq=<activemq host> && docker-compose up`
 
